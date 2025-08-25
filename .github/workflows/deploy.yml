@@ -12,8 +12,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install mdBook
         run: cargo install mdbook
+
+      - name: Install mdbook-wavedrom preprocessor
+        run: cargo install mdbook-wavedrom
+
+      - name: Let mdbook-wavedrom preprocess the book
+        run: mdbook-wavedrom install .
+
       - name: Build the book
         run: mdbook build
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
