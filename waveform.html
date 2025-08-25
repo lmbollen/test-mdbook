@@ -175,7 +175,16 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="waveform"><a class="header" href="#waveform">waveform</a></h1>
+                        <p>Here's a nice waveform:</p>
+<body onload="WaveDrom.ProcessAll()">
+<script type="WaveDrom">{signal: [
+  {name: 'clk', wave: 'p.....|...'},
+  {name: 'dat', wave: 'x.345x|=.x', data: ['head', 'body', 'tail', 'data']},
+  {name: 'req', wave: '0.1..0|1.0'},
+  {},
+  {name: 'ack', wave: '1.....|01.'}
+]}
+</script>
 
                     </main>
 
