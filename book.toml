@@ -1,0 +1,6 @@
+[book]
+title = "mdBook + GitHub Pages Test"
+author = ["Your Name"]
+
+[build]
+create-missing = true
